@@ -18,3 +18,10 @@ const products = [
 products.forEach(function (product) {
     console.log(`Старая цена ${product.price}, c учетом скидки в 15% = ${product.price *= 0.85}`);
 });
+
+// Второе решение
+
+for (let i in products) {
+    products.price *= 0.85
+    console.log(`Цена со скидкой: ${products[i]['price']}`);
+}
